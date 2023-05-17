@@ -5,11 +5,13 @@ import Intro1 from './components/Intro1';
 import Intro2 from './components/Intro2';
 import Intro3 from './components/Intro3';
 import Footer from './components/Footer';
+import ModeToggler from "./components/ModeToggler";
 
 function App() {
   return (
     <div className="App">
       <Nav />
+      <ModeToggler />
       <Intro1 />
       <Intro2 />
       <Intro3 />
