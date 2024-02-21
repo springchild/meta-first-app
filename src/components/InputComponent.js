@@ -1,16 +1,16 @@
-import { useState } from 'react';
-export default function InputComponent(){
-  const [inputText, setText] = useState('hello');
-  function handleChange(e){
-    setText(e.target.value);
-  }
-  return(
-    <>
-    <input value={inputText} onCange={handleChange}/>
-    <p>You typed: {inputText}</p>
-    <button onClick={()=>setText('hello!')}>
-        Reset
-    </button>
-    </>
-  )
-}
+function InputComponent() {
+    const handler = () => console.log('fourth example')
+    return ( 
+       <div> 
+         <button onClick = {handler} >
+           Click Me!!!!!!!!!
+         </button>
+         <button onClick={ () => console.log('clicked') }> 
+            Click here
+        </button>
+       </div>
+       
+    )
+ }
+ export default InputComponent;
+  
